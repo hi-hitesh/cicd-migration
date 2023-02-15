@@ -1,0 +1,28 @@
+{
+  "name": "cicd-migration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "pg": "^8.9.0",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate:admin": "sequelize db:migrate --env admin",
+    "migrate:ledger": "sequelize db:migrate --env ledger"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hi-hitesh/cicd-migration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hi-hitesh/cicd-migration/issues"
+  },
+  "homepage": "https://github.com/hi-hitesh/cicd-migration#readme"
+}
